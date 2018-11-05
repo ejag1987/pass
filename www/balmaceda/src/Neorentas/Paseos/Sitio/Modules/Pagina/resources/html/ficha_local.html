@@ -1,0 +1,33 @@
+<div class="columns">
+    <div class="column is-half vertical">
+        <img src="{#SITIO_PASEOS#}uploads/{#CARPETA#}/mapa/{#IMAGEN#}">
+
+        <div class="content is-normal has-text-left">{#PIE_FICHA#}</div>
+        <div class="content is-normal has-text-left">{#FECHA_ACTUALIZACION#}</div>
+    </div>
+
+    <div class="column is-half ficha content is-normal">
+        <div id="descargar-pdf" class="boton-descargar button is-info is-outlined">
+            <div class="icono"><img src="{#SITIO_PASEOS#}resources/img/descargar.svg"></div>
+            <div class="content is-small">DESCARGAR PDF</div>
+        </div>
+        <div class="titulo-ficha content is-medium">
+            <div>LOCAL {#NUM_LOCAL#}</div>
+            <div><strong>{#METROS#} m2</strong></div>
+            <div>{#NOMBRE#}</div>
+            <div>{#ALTURA#}</div>
+        </div>
+
+        <div class="subtitle is-5">Instalaciones</div>
+
+        <div class="numeracion-ficha content is-normal">
+            <ol class="rounded-list">
+                {#TERMINACIONES#}
+            </ol>
+        </div>
+
+
+        <div class="subtitle is-5">Nota</div>
+        <div class="content is-normal">{#NOTA#}</div>
+    </div>
+</div>

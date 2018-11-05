@@ -1,0 +1,51 @@
+<form id="local-{#ID_LOCAL#}" class="box box-border-info local column is-12">
+    <div class="header-local">
+        <div class="pull-left">
+            Número de local: {#NUMERO#}
+        </div>
+        <div class="has-text-right">
+            <div id="switch-reservado-{#ID_LOCAL#}" class="reservado {#ESTADO_LOCAL#}" data-id="{#ID_LOCAL#}">
+                <span>Reservado</span>
+                <div class="material-switch pull-right">
+                    <input id="reservado-{#ID_LOCAL#}" name="reservado-{#ID_LOCAL#}" type="checkbox" value="1"
+                           data-id="{#ID_LOCAL#}" {#CHECKED_RESERVADO#}/>
+                    <label for="reservado-{#ID_LOCAL#}" class="label-danger"></label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="disponible-{#ID_LOCAL#}" class="disponible" {#CHECKED_DISPONIBLE#} title=""
+                   data-id="{#ID_LOCAL#}">
+
+            <i class="fa fa-chevron-down abrir-descripcion" data-id="{#ID_LOCAL#}" aria-hidden="true" title="Descripción" ></i>
+        </div>
+    </div>
+    <div id="descripcion-{#ID_LOCAL#}" class="descripcion">
+        <div class="form-group">
+            <label class="label">Número</label>
+            <p class="control">
+                <input id="numero-{#ID_LOCAL#}" class="input" type="text" placeholder="Número" value="{#NUMERO#}"
+                       data-validate="true" data-required="true" data-validation="text">
+            </p>
+        </div>
+
+        <div id="tipo-local-{#ID_LOCAL#}">
+
+        </div>
+
+
+        <div class="form-group">
+            <div class="columns">
+                <div class="column is-4 is-offset-8">
+                    <button type="button" id="guardar-local-{#ID_LOCAL#}" class="button is-primary guardar-local" data-id="{#ID_LOCAL#}">GUARDAR</button>
+                    <button type="button" class="button is-danger borrar-local" data-id="{#ID_LOCAL#}">ELIMINAR</button>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-12 alto-boton">
+                    <div id="error-datos-{#ID_LOCAL#}" class="error"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,83 @@
+@import "utilities/variables"
+
+.uploader
+  border: 2px dotted $grey-lighter
+  width: 100%
+  color: $grey
+  text-align: center
+  vertical-align: middle
+  padding: 30px 0
+  margin-bottom: 10px
+  font-size: $size-medium
+  cursor: default
+  -webkit-touch-callout: none
+  user-select: none
+  & div.or
+    font-size: $size-small
+    font-weight: bold
+    color: $grey-light
+  & div.browser
+    text-align: center
+    & label
+      background-color: $white
+      padding: $padding-boton
+      color: $primary
+      font-size: $size-7
+      font-weight: bold
+      cursor: pointer
+      border-radius: $radius-small
+      border: 1px solid $primary
+      position: relative
+      overflow: hidden
+      max-width: 300px
+      display: inline-block
+      &:hover
+        background-color: $primary
+        color: $white
+    & span
+      cursor: pointer
+    & input
+      position: absolute
+      top: 0
+      right: 0
+      margin: 0
+      border: solid transparent
+      border-width: 0 0 100px 200px
+      opacity: .0
+      filter: alpha(opacity= 0)
+      -o-transform: translate(250px,-50px) scale(1)
+      -moz-transform: translate(-300px,0) scale(4)
+      direction: ltr
+      cursor: pointer
+    & small
+      font-size: $size-7
+      color: $grey
+      display: block
+
+.file
+  padding: $padding
+  border-bottom: 1px solid $grey-light
+  align-items: center
+  display: flex
+  margin-bottom: 0
+
+.datos-imagen
+  float: left
+  width: 100%
+  padding: $padding
+  
+
+.image-preview
+  max-width: $thumbailw+px
+  max-height: $thumbailh+px
+
+  -webkit-border-radius: 4px
+  -moz-border-radius: 4px
+  border-radius: 4px
+
+.preview
+  max-width: $thumbailw+px
+  max-height: $thumbailh+px
+  margin: $margin-preview
+  float: left
+

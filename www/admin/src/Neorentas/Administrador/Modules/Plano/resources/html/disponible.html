@@ -1,0 +1,42 @@
+<div class="form-group">
+    <label for="metros-{#ID_LOCAL#}" class="label">Metros *</label>
+    <p class="control">
+        <input id="metros-{#ID_LOCAL#}" class="input" type="text" placeholder="Nombre" value="{#METROS#}"
+               data-validate="true" data-required="true" data-validation="text">
+    </p>
+</div>
+<div id="instalaciones-{#ID_LOCAL#}" class="">
+    <h2 class="subrayado">INSTALACIONES</h2>
+    <div class="box">
+        {#TERMINACIONES#}
+    </div>
+</div>
+<div class="form-group">
+    <label for="nota-{#ID_LOCAL#}" class="label">Nota</label>
+    <p class="control">
+        <textarea id="nota-{#ID_LOCAL#}" class="textarea" data-validate="true"
+                  data-validation="text">{#NOTA#}</textarea>
+    </p>
+</div>
+<div class="form-group">
+    <label class="label">Pie de ficha</label>
+    <p class="control">
+        <input id="pie-imagen-{#ID_LOCAL#}" class="input" type="text" placeholder="Pie de imagen" value="{#PIE_IMAGEN#}"
+               data-validate="true" data-validation="text">
+    </p>
+</div>
+
+<div class="form-group">
+    <label class="label">Fecha actualización</label>
+    <p class="control">
+        <input id="fecha-actualizacion-{#ID_LOCAL#}" class="input" type="text" placeholder="Fecha actualización"
+               value="{#FECHA_ACTUALIZACION#}" data-validate="true" data-validation="text">
+    </p>
+</div>
+<div class="form-group">
+    <div class="columns">
+        <div id="bloque-subir-local-{#ID_LOCAL#}" class="bloque-subir column is-6">
+            {#HTML_LOCAL#}
+        </div>
+    </div>
+</div>

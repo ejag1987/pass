@@ -1,0 +1,35 @@
+<header class="columns header-admin">
+    <div class="bg-white column is-2 header-logo">
+        <div class="logo has-text-centered">
+            <a href="{#BASE_URL#}"><img src="{#BASE_URL#}resources/img/paseo_logo.png"></a>
+        </div>
+
+    </div>
+    <div class="navegador column is-10 bg-primary">
+        <nav class="nav bg-primary">
+            <div class="nav-left">
+                <div class="nav-item">
+                    {#NOMBRE_SITIO#}
+                </div>
+            </div>
+            <div class="nav-right nav-menu bg-primary is-active">
+                <div class="nav-item usuario">
+                    {#NOMBRE_USUARIO#}
+                    <div class="content is-small">
+                        <a href="{#BASE_URL#}usuario/{#ID_USUARIO#}" class="">
+                            <span class="icon is-small"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item logout">
+                    <a href="{#BASE_URL#}logout">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        SALIR
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+</header>

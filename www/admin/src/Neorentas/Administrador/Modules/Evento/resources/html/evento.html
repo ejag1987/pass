@@ -1,0 +1,65 @@
+<form id="evento-{#ID_EVENTO#}" class="form-evento column is-6">
+    <div class="evento box">
+        <div id="bloque-subir-foto-{#ID_EVENTO#}" class="bloque-subir">
+            {#HTML_ACCION_IMAGEN#}
+        </div>
+
+        <div class="form-group">
+            <label class="label">Título</label>
+            <p class="control">
+                <input id="titulo-{#ID_EVENTO#}" class="input" type="text" placeholder="Título" value="{#TITULO#}"
+                       data-validate="true" data-required="true" data-validation="text" maxlength="100">
+            </p>
+        </div>
+         <div class="form-group">
+            <p class="control">
+                <input id="alias-{#ID_EVENTO#}" class="input" type="hidden" placeholder="Alias" value="{#ALIAS#}"
+                       data-validate="true" data-required="false" data-validation="text">
+            </p>
+        </div>
+
+
+        <div class="form-group">
+            <label class="label">Descripción</label>
+            <p class="control">
+                <textarea id="descripcion-{#ID_EVENTO#}" class="textarea" placeholder="Descripción"
+                       data-validate="true" data-required="true" data-validation="text" maxlength="255">{#DESCRIPCION#}</textarea>
+            </p>
+        </div>
+        <div class="form-group">
+            <label class="label">Contenido</label>
+            <p class="control">
+                <textarea id="contenido-{#ID_EVENTO#}" class="textarea" placeholder="Contenido"
+                       data-validate="true" data-required="true" data-validation="text">{#CONTENIDO#}</textarea>
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Fecha</label>
+            <p class="control">
+                <input id="fecha-{#ID_EVENTO#}" class="input fecha" type="text" placeholder="Fecha" value="{#FECHA#}"
+                       data-validate="true" data-required="false" data-validation="text">
+            </p>
+        </div>
+        <div class="form-group">
+            <label class="label">Horario</label>
+            <p class="control">
+                <input id="horario-{#ID_EVENTO#}" class="input" type="text" placeholder="Horario" value="{#HORARIO#}"
+                       data-validate="true" data-required="false" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group columns">
+            <div class="column is-2">
+                <button type="button" class="button is-primary guardar-evento" data-id="{#ID_EVENTO#}">GUARDAR</button>
+            </div>
+            <div class="column is-2">
+                <button type="button" class="button is-danger borrar-evento" data-id="{#ID_EVENTO#}">ELIMINAR</button>
+            </div>
+            <div class="column is-8">
+                <div id="error-datos-{#ID_EVENTO#}" class="error"></div>
+            </div>
+        </div>
+    </div>
+
+</form>

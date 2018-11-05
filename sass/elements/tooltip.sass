@@ -1,0 +1,26 @@
+.tooltip
+  display: inline-flex
+  position: relative
+
+  &:hover:after
+    background: $background-tooltip
+    border-radius: $radius-large
+    bottom: 120%
+    color: findColorInvert($background-tooltip)
+    content: attr(title)
+    left: -50%
+    padding: $padding-tooltip
+    position: absolute
+    z-index: 98
+    font-size: 1rem
+    white-space: nowrap
+
+  &:hover:before
+    border: solid
+    border-color: $background-tooltip transparent
+    border-width: 6px 6px 0 6px
+    bottom: 100%
+    content: ""
+    left: 40%
+    position: absolute
+    z-index: 99

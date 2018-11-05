@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  webserver:
+    image: 'extend/webserver'
+    links:
+      - database
+    ports:
+      - '80:80'
+    volumes:
+      - ./www:/var/www/html
+      - ./apache_logs:/var/log/apache2
+      - ./conf/apache/sites-enabled:/etc/apache2/sites-enabled
+    container_name: webserver
+  database:
+    image: mysql:5.7
+    volumes:
+      - ./conf/mysql:/etc/mysql/conf.d
+      - ./database:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+      - ./mysql_logs:/var/log/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: qwerty
+    ports:
+      - '3306:3306'
+    container_name: mysqlserver

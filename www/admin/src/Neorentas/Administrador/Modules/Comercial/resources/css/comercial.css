@@ -1,0 +1,7 @@
+.section {
+    margin-bottom: 30px;
+}
+
+.servicios {
+    flex-wrap: wrap;
+}

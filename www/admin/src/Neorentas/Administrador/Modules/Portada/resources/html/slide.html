@@ -1,0 +1,32 @@
+<form id="slide-{#ID_SLIDE#}" class="column is-3">
+    <div class="box slide">
+        <div id="bloque-subir-slide-{#ID_SLIDE#}" class="bloque-subir" data-bloque="slide">
+            {#HTML_ACCION_ICONO#}
+        </div>
+        <div class="form-group">
+            <label class="label">Comentario</label>
+            <p class="control">
+                <textarea name="comentario-{#ID_SLIDE#}" id="comentario-{#ID_SLIDE#}" cols="30" rows="5" placeholder="Escriba su Comentario" data-validate="true" data-validation="text" class="input textarea" maxlength="80">{#COMENTARIO#}</textarea>
+            </p>
+        </div>
+        <div class="form-group">
+            <label class="label">Link</label>
+            <p class="control">
+                <input id="link-{#ID_SLIDE#}" class="input" type="text" placeholder="Link" value="{#LINK#}"
+                       data-validate="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group columns botones-slide" data-bloque="slide">
+            <div class="column is-4">
+                <button type="button" class="button is-primary guardaslide" data-id="{#ID_SLIDE#}">GUARDAR</button>
+            </div>
+            <div class="column is-4">
+                <button type="button" class="button is-danger borrar" data-id="{#ID_SLIDE#}">ELIMINAR</button>
+            </div>
+            <div class="column is-5">
+                <div id="error-slide-{#ID_SLIDE#}" class="error"></div>
+            </div>
+        </div>
+    </div>
+</form>

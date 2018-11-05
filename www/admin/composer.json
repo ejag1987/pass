@@ -1,0 +1,35 @@
+{
+  "name": "neorentas/administrador",
+  "license": "",
+  "type": "project",
+    "description": "Sistema de sitios de neorentas.",
+    "keywords": [],
+    "homepage": "http://www.paseos.cl",
+    "authors": [
+        {
+            "name": "Álvaro Somoza",
+            "email": "asomoza@extend.cl",
+            "homepage": "http://www.extend.cl"
+        }, {
+            "name": "Francisca Nuñez",
+            "email": "fnunez@extend.cl",
+            "homepage": "http://www.extend.cl"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "zcode/lighting" : "dev-master",
+        "phpoffice/phpspreadsheet":  "dev-develop"
+    },
+    "autoload": {
+        "psr-4": {
+          "Neorentas\\Administrador\\": "src/Neorentas/Administrador"
+        }
+    },
+    "repositories" : [
+        {
+            "type" : "vcs",
+            "url" : "git@gitlab.zcode.cl:zcode/lighting.git"
+        }
+    ]
+}

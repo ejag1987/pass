@@ -1,0 +1,49 @@
+footer {
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+footer strong {
+    font-family: "QuicksandBold", "Arial", sans-serif;
+    color: #ffffff;
+}
+footer div, footer a {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+
+.columns.icono {
+    align-items: center;
+}
+
+footer .icono {
+    width: 41px;
+    margin-right: 20px;
+}
+.icono {
+    align-items: center;
+
+}
+
+.icono img {
+    max-width: 41px;
+}
+
+.columna-centrada {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10%;
+    }
+
+    footer .columna-centrada {
+        justify-content: left;
+    }
+}
+

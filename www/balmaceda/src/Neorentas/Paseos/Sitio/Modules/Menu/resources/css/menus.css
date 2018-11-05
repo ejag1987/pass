@@ -1,0 +1,75 @@
+#header-menu > ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-menu ul li {
+    position: relative;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#header-menu ul a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 14px 15px;
+    height: 100%;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#header-menu ul li.current-menu-item {
+    background:#ddd
+}
+
+#header-menu ul li:hover a {
+    background: rgb(255, 255, 255);
+    color: rgb(114, 100, 169);
+}
+
+#header-menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0;
+    min-width: 206px;
+}
+
+#header-menu ul ul li {
+    width: 100%;
+}
+
+#header-menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+
+#header-menu ul ul ul {
+    top:0;
+    left:100%
+}
+
+#header-menu ul li:hover > ul {
+    display:block
+}
+
+.sub-menu li:hover,
+.sub-menu li:hover a {
+    background: rgb(114, 100, 169) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.separador {
+    padding: 10px 0;
+    width: 0;
+    text-indent: -1px;
+
+}
+
+.navbar-brand a.navbar-item:hover {
+    background-color: transparent;
+}

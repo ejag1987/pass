@@ -1,0 +1,49 @@
+@import "utilities/variables"
+
+$width-logo: 220px
+
+=center($size)
+  left: 50%
+  margin-left: -($size / 2)
+  position: relative
+  top: 50%
+
+.section.is-offset-2
+  margin-left: 0
+
+.login-page
+  width: 100%
+  height: 100%
+  position: absolute
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+.login-box
+  background-color: $white
+  border-radius: $radius-large
+  box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1)
+  display: block
+  padding: 1.25rem
+  width: $box-small
+  position: relative
+
+.login-logo
+  +center($width-logo)
+  width: $width-logo
+
+.login-box-body
+  background: $white
+  padding: $padding
+  color: $grey
+
+.boton-derecha
+  text-align: right
+
+@import "animation/shake"
+
+.shake-error-login
+  @include do-shake('shake-error-login', 20, 0, 0, 500ms, .1, $q: 1, $hover:false)
+
+

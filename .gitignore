@@ -1,0 +1,16 @@
+.idea/
+
+#ignore logs
+*.log
+
+www/composer.lock
+www/vendor/
+database/
+www/info.php
+www/uploads/
+apache_logs/
+www/admin/vendor/
+www/admin_ext
+www/balmaceda_ext
+www/uploads_ext
+phpMyAdmin

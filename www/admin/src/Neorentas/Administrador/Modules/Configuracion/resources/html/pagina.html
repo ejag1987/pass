@@ -1,0 +1,54 @@
+<section class="section box box-border-info">
+    <h1 class="title is-4">Acerca de la empresa</h1>
+
+    <div  class="columns">
+        <div class="column is-6">
+            <div class="form-group">
+                <label class="label">Fondo de la página</label>
+                <div id="bloque-fondos" class="bloque-subir">
+                    {#HTML_FONDO#}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="editor">Imagen</label>
+                <div id="bloque-imagenes" class="bloque-subir">
+                    {#HTML_IMAGEN#}
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" id="id-pagina" value="{#ID_PAGINA#}">
+
+        <div class="column is-6">
+            <form id="contenido-texto" class="">
+                <div class="form-group">
+                    <label class="label">Título normal</label>
+                    <p class="control">
+                        <input id="titulo1" class="input" type="text" placeholder="Título normal" value="{#TITULO1#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label class="label">Título en negritas</label>
+                    <p class="control">
+                        <input id="titulo2" class="input" type="text" placeholder="Título en negritas" value="{#TITULO2#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="editor">Texto</label>
+                    <p class="control">
+                        <textarea id="editor" class="editor" name="editor"
+                                  data-validate="true" data-validation="text">{#TEXTO#}</textarea>
+                    </p>
+                </div>
+                <div class="form-group alto-boton">
+                    <button type="button" id="guardar-acerca" class="button is-primary pull-left">GUARDAR</button>
+                    <div id="error-acerca" class="error pull-left"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+.menu-label {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 150%;
+}
+
+#paseos.select2 {
+    padding-left: 10px;
+}
+.alto-boton-menu {
+    margin-bottom: 1rem;
+}
+
+.menu-paseos {
+    margin-top: 0.75rem;
+}

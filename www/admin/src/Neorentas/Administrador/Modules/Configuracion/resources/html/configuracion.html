@@ -1,0 +1,35 @@
+<form id="datos-sitio" class="section box box-border-info">
+    <h1 class="title is-4">Configuración</h1>
+
+    <div class="form-group">
+        <label class="label">Nombre del sitio *</label>
+        <p class="control">
+            <input id="nombre" class="input" type="text" placeholder="Nombre" value="{#NOMBRE#}"
+                   data-validate="true" data-required="true" data-validation="text">
+        </p>
+    </div>
+
+    <div class="form-group">
+        <label class="label">Carpeta</label>
+        <p class="control">
+            <input class="input is-disabled" type="text" placeholder="Carpeta" value="{#CARPETA#}">
+        </p>
+    </div>
+
+    <div class="form-group">
+        <label class="label">URL del sitio *</label>
+        <p class="control">
+            <input id="url" class="input" type="text" placeholder="Url del sitio" value="{#URL#}"
+                   data-validate="true" data-required="true" data-validation="url">
+        </p>
+    </div>
+
+    <div class="form-group">
+        <button type="button" id="guardar-datos" class="button is-primary">GUARDAR</button>
+        <div id="error-datos" class="error"></div>
+    </div>
+    <input type="hidden" id="id-sitio" value="{#ID_SITIO#}">
+</form>
+
+{#PAGINA_INFORMACION_GENERAL#}
+

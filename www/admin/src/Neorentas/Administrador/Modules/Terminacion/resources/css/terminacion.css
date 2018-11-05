@@ -1,0 +1,22 @@
+.terminacion {
+    align-items: center;
+}
+.botones > i {
+    cursor: pointer;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#nueva-terminacion {
+    cursor: pointer;
+}
+
+#nueva-terminacion:hover {
+    transform: rotate(45deg);
+    transition: none 86ms ease-out;
+    color: rgb(0, 125, 187);
+}
+
+.error {
+    margin-left: 2rem;
+}

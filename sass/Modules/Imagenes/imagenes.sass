@@ -1,0 +1,52 @@
+@import "utilities/variables"
+@import "animation/fade-in"
+
+#imagenes
+  flex-wrap: wrap
+  justify-content: left
+  display: inline-flex
+
+.imagen-foto
+  padding: 5px
+  border: 1px solid $grey-lighter
+
+  @include animation(0, 0.8s, 1, fadeIn, 'linear')
+
+.imagen-foto img
+  object-fit: cover
+  object-position: center 0
+
+.figure-image
+  position: relative
+  min-width: 240px
+  max-width: 250px
+
+
+.botones-accion
+  text-align: right
+
+
+.datos
+  background: rgba(255,255,255,.8)
+  position: absolute
+  top: 3.06rem
+  bottom: 0
+  left: 0
+  right: 0
+  padding: .5rem 1.5rem
+
+
+.datos .label
+  font-size: 12px
+  font-weight: 900
+
+
+.nombre-imagen
+  word-break: break-all
+  word-wrap: break-word
+
+#buscar-texto
+  cursor: pointer
+
+#buscador
+  width: 89%

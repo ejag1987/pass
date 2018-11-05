@@ -1,0 +1,12 @@
+.boton-agregar {
+    margin: 0.75rem 0;
+}
+
+.botones-slide {
+    margin-top: 0.75rem;
+}
+
+.bloque-slides,
+.bloque-calugas {
+    flex-wrap: wrap;
+}

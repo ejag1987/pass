@@ -1,0 +1,55 @@
+.bloque-menu {
+    margin: 1rem 0;
+}
+
+ol {
+    list-style: none;
+}
+
+.sortable .box-header {
+    cursor: move;
+}
+
+ol li ol {
+    padding-left: 2.75rem;
+}
+
+.bloque-menu li {
+    margin: 0.75rem 0;
+}
+
+.sortable .box {
+    box-shadow: none;
+    border: 1px solid rgba(210, 214, 222, .5);
+}
+
+.bloque-menu .header {
+    width: 100%;
+    height: 35px;
+}
+
+.mover-menu {
+    cursor: move;
+    float: left;
+    line-height: 35px;
+    width: 35px;
+}
+
+.switch {
+    float: right;
+}
+
+.guardar-menu,
+.guardar-orden,
+.guardar-nuevo {
+    display: inline-block;
+}
+
+.error {
+    margin-left: 35px;
+    display: inline-block;
+}
+
+#form-agregar-menu .error {
+    max-width: 65%;
+}

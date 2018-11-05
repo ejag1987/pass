@@ -1,0 +1,51 @@
+<form id="plano-{#ID_PLANO#}" class="column is-3">
+    <div class="plano box">
+        <div id="bloque-subir-{#ID_PLANO#}" class="bloque-subir">
+            {#HTML_PLANO#}
+        </div>
+
+        <div class="form-group">
+            <label class="label">Nombre</label>
+            <p class="control">
+                <input id="nombre-{#ID_PLANO#}" class="input" type="text" placeholder="Nombre" value="{#NOMBRE#}"
+                       data-validate="true" data-required="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Pie de imagen</label>
+            <p class="control">
+                <input id="pie-imagen-{#ID_PLANO#}" class="input" type="text" placeholder="Pie de imagen" value="{#PIE_IMAGEN#}"
+                       data-validate="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Fecha actualización</label>
+            <p class="control">
+                <input id="fecha-actualizacion-{#ID_PLANO#}" class="input" type="text" placeholder="Fecha actualización"
+                       value="{#FECHA_ACTUALIZACION#}" data-validate="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group">
+            <div class="columns">
+                <div class="column is-4">
+                    <a type="button" href="?id={#ID_PLANO#}" class="button is-primary editar" data-id="{#ID_PLANO#}">LOCALES</a>
+                </div>
+                <div class="column is-4">
+                    <button type="button" class="button is-primary guardar" data-id="{#ID_PLANO#}">GUARDAR</button>
+                </div>
+                <div class="column is-4">
+                    <button type="button" class="button is-danger borrar-plano" data-id="{#ID_PLANO#}">ELIMINAR</button>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-12 alto-boton">
+                    <div id="error-datos-{#ID_PLANO#}" class="error"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

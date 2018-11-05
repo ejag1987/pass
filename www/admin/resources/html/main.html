@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="es">
+
+    <!-- Always force latest IE rendering engine (even in intranet) &
+    Chrome Frame Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>{#PAGE_TITLE#}</title>
+
+    <link rel="shortcut icon" href="{#BASE_URL#}favicon.ico">
+
+    <link rel="stylesheet" href="{#BASE_URL#}resources/css/font-awesome.css"/>
+    <link rel="stylesheet" href="{#BASE_URL#}resources/css/global.css"/>
+    {#CSS#}
+
+    <script src="{#BASE_URL#}resources/js/jquery-3.1.1.min.js"></script>
+    <script src="{#BASE_URL#}resources/js/global.js"></script>
+
+    <!-- CKEditor -->
+    <script src="{#BASE_URL#}resources/ckeditor/ckeditor.js"></script>
+    <script src="{#BASE_URL#}resources/ckeditor/config.js"></script>
+    <script src="{#BASE_URL#}resources/ckeditor/styles.js"></script>
+    <script src="{#BASE_URL#}resources/ckeditor/lang/es.js"></script>
+    {#JS#}
+
+    <link rel="stylesheet" href="{#BASE_URL#}resources/ckeditor/skins/moono/dialog.css"/>
+    <link rel="stylesheet" href="{#BASE_URL#}resources/ckeditor/skins/moono/editor.css"/>
+    <link rel="stylesheet" href="{#BASE_URL#}resources/ckeditor/skins/moono/editor_gecko.css"/>
+
+</head>
+<body>
+    <main>
+        {#HEADER#}
+        <div class="content columns">
+            {#MENU#}
+            <article class="section-content column is-10">{#MODULE#}</article>
+        </div>
+        {#FOOTER#}
+        <input type="hidden" id="site-url" data-url="{#BASE_URL#}"/>
+    </main>
+
+</body>
+</html>

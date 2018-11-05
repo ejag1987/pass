@@ -1,0 +1,66 @@
+<aside class="section sidebar-menu column is-2 bg-primary">
+    <p class="menu-label">
+        {#NOMBRE_SITIO#}
+    </p>
+    <ul class="menu-list">
+        <li>
+            <a href="{#BASE_URL#}configuracion/1">
+                <span class="icon is-small"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                Información general
+            </a>
+        </li>
+        <li>
+            <a href="{#BASE_URL#}contacto/1">
+                <span class="icon is-small"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                Contacto
+            </a>
+        </li>
+        <li>
+            <a href="{#BASE_URL#}rrss/1">
+                <span class="icon is-small"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                Redes sociales
+            </a>
+        </li>
+        <li>
+            <a href="{#BASE_URL#}marca/1">
+                <span class="icon is-small"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+                Marcas
+            </a>
+        </li>
+        <li>
+            <a href="{#BASE_URL#}portada/1">
+                <span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span>
+                Portada
+            </a>
+        </li>
+        <li>
+            <a href="{#BASE_URL#}menusitio/1">
+                <span class="icon is-small"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                Menús
+            </a>
+        </li>
+        <li>
+            <a href="{#BASE_URL#}usuario">
+                <span class="icon is-small"><i class="fa fa-user" aria-hidden="true"></i></span>
+                Usuarios
+            </a>
+        </li>
+    </ul>
+
+    <p class="menu-label">
+        Paseos
+    </p>
+
+    <button id="crear-sitio" class="button is-primary is-inverted pull-right alto-boton-menu">
+        Crear sitio
+    </button>
+
+    <select id="paseos" class="select2" title="">
+        <option></option>
+        {#PASEOS#}
+    </select>
+
+    <ul id="menu-paseos" class="menu-list menu-paseos">
+        {#MENU_PASEOS#}
+    </ul>
+</aside>

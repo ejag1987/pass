@@ -1,0 +1,37 @@
+<input type="hidden" id="id-sitio" value="{#ID_SITIO#}">
+<section class="section boton-agregar">
+    <button id="nuevo-slide" type="button" class="button is-primary">
+        <i class="fa fa-picture-o"></i>&nbsp;&nbsp; Agregar nuevo Slide
+    </button>
+
+</section>
+<section class="section box box-border-info">
+    <h1 class="title is-4">Slide</h1>
+    <div id="bloque-slide" class="bloque-slides columns orden" data-grupo="slide">
+        {#SLIDE#}
+    </div>
+</section>
+
+<section class="section boton-agregar {#SITIOS_INTERNOS#}">
+    <button id="nueva-caluga" type="button" class="button is-primary">
+        <i class="fa fa-picture-o"></i>&nbsp;&nbsp; Agregar nueva Caluga
+    </button>
+</section>
+<section class="section box box-border-info">
+    <h1 class="title is-4">Calugas</h1>
+    <div id="bloque-caluga" class="bloque-calugas columns orden" data-grupo="caluga">
+        {#CALUGAS#}
+    </div>
+</section>
+
+<section class="section boton-agregar {#SITIOS_INTERNOS#}">
+    <button id="nueva-calugaSite" type="button" class="button is-primary">
+        <i class="fa fa-picture-o"></i>&nbsp;&nbsp; Agregar nuevo Sitio
+    </button>
+</section>
+<section class="section box box-border-info">
+    <h1 class="title is-4">Sitios</h1>
+    <div id="bloque-calugaSite" class="bloque-calugas columns orden" data-grupo="caluga">
+        {#SITE#}
+    </div>
+</section>

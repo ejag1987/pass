@@ -1,0 +1,142 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>Ficha local N° {#NUM_LOCAL#}</title>
+
+    <style type="text/css">
+
+        @page {
+            margin: 1cm;
+        }
+
+        body {
+            color: #686868;
+            font-family: Arial, sans-serif;
+            margin: 0.72cm 0;
+            text-align: justify;
+            font-size: 10pt;
+            font-weight: normal;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 7cm;
+            width: 100%;
+        }
+
+        #logo {
+            margin-bottom: 1.4cm;
+        }
+
+        #logo_img {
+            width: 3.2cm;
+        }
+
+        #logo_img img {
+            width: 3.2cm;
+        }
+
+        .titulo-ficha {
+            margin-bottom:0.5cm;
+        }
+
+        #imagen {
+            width: 100%;
+            text-align: center;
+        }
+
+        #imagen img {
+            {#ESTILO#}
+        }
+
+        .subtitle {
+            font-weight: bold;
+            margin-bottom:0.3cm;
+        }
+
+        .numeracion-ficha {
+            margin-bottom: 0.5cm;
+        }
+
+        ol.rounded-list {
+            counter-reset: li;
+            padding: 0;
+            margin:0;
+            list-style: none;
+        }
+
+        .rounded-list p {
+            position: relative;
+            padding: 0.02cm;
+            margin: 0;
+        }
+
+        .rounded-list p:before{
+            content: attr(data-count);
+            counter-increment: li;
+            position: relative;
+            display: inline-block;
+            margin-right: 0.3cm;
+        }
+
+        #imagen {
+            position: relative;
+            top: 5cm;
+            page-break-after: always;
+        }
+
+        .contenido-ficha {
+            position: relative;
+            top: 5cm;
+        }
+
+    </style>
+
+</head>
+
+<body marginwidth="0" marginheight="0">
+    <header>
+        <div id="logo">
+            <div id="logo_img">
+                <img src="{#DOC_ROOT#}/uploads/{#CARPETA#}/imagenes/paseo_balmaceda.svg">
+            </div>
+            <div>www.paseobalmaceda.cl</div>
+        </div>
+        <div class="titulo-ficha content">
+            <div>Plano de local {#NUM_LOCAL#}</div>
+            <div><strong>{#METROS#} m2</strong></div>
+            <div>{#NOMBRE#}</div>
+            <div>{#ALTURA#}</div>
+        </div>
+    </header>
+
+    <main>
+        <div id="imagen">
+            <img src="{#DOC_ROOT#}/uploads/{#CARPETA#}/mapa/{#IMAGEN#}">
+        </div>
+
+        <div class="contenido-ficha">
+            <div class="subtitle">Instalaciones</div>
+
+            <div class="numeracion-ficha">
+                <ol class="rounded-list">
+                    {#TERMINACIONES#}
+                </ol>
+            </div>
+
+
+            <div class="subtitle">Nota</div>
+            <div class="content is-normal">{#NOTA#}</div>
+
+            <div class="bloque-extra">
+                <div class="content is-normal"><small>{#PIE_FICHA#}</small></div>
+                <div class="content is-normal"><small>{#FECHA_ACTUALIZACION#}</small></div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

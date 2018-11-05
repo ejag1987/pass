@@ -1,0 +1,46 @@
+.boton-rrss {
+    margin: 0.75rem 0;
+}
+.section.box .title {
+    border-bottom: 1px solid rgb(0, 133, 200);
+    padding-bottom: 10px;
+}
+
+.red-social {
+    margin: 10px;
+    background: #fff;
+}
+
+.bloque-redes {
+    flex-wrap: wrap;
+}
+
+.form-group.columns {
+    margin-top: 0.75rem;
+}
+
+.form-group.columns .error {
+    margin-left: 0;
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
+.error {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.uploader div.browser label {
+    padding: 0.5rem 1rem;
+}
+.uploader {
+    font-size: 1rem;
+    padding: 30px 20px;
+}
+
+.imagen-icono {
+    text-align: center;
+}
+.imagen-icono img {
+    max-width: 50px;
+    background: #7a7a7a;
+}

@@ -1,0 +1,20 @@
+<div id="datos-sitio" class="section columns">
+    <div class="box box-border-info column is-6">
+        <img src="{#IMAGEN#}">
+    </div>
+
+    <div class="column is-6">
+        <div class="pull-right">
+            <button id="nuevo-local" type="button" class="button is-primary">
+                <i class="fa fa-map-o"></i>&nbsp;&nbsp; Agregar local
+            </button>
+        </div>
+        <h1 class="title is-4">Locales</h1>
+
+        <div id="bloque-locales">
+            {#LOCAL#}
+        </div>
+
+    </div>
+    <input type="hidden" id="id-plano" value="{#ID_PLANO#}">
+</div>

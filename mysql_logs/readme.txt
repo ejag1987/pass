@@ -1,0 +1,1 @@
+Directorio donde residen los logs del mysql

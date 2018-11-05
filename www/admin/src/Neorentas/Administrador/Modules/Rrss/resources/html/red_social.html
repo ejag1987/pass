@@ -1,0 +1,34 @@
+<form id="red-social-{#ID_RED_SOCIAL#}" class="column is-3">
+    <div class="box red-social">
+        <div id="bloque-subir-{#ID_RED_SOCIAL#}" class="bloque-subir">
+            {#HTML_ACCION_ICONO#}
+        </div>
+        <div class="form-group">
+            <label class="label">Red social</label>
+            <p class="control">
+                <input id="nombre-{#ID_RED_SOCIAL#}" class="input" type="text" placeholder="Nombre" value="{#NOMBRE#}"
+                       data-validate="true" data-required="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Link</label>
+            <p class="control">
+                <input id="link-{#ID_RED_SOCIAL#}" class="input" type="text" placeholder="Link" value="{#LINK#}"
+                       data-validate="true" data-required="true" data-validation="url">
+            </p>
+        </div>
+
+        <div class="form-group columns">
+            <div class="column is-4">
+                <button type="button" class="button is-primary guardar-red" data-id="{#ID_RED_SOCIAL#}">GUARDAR</button>
+            </div>
+            <div class="column is-4">
+                <button type="button" class="button is-danger borrar-red" data-id="{#ID_RED_SOCIAL#}">ELIMINAR</button>
+            </div>
+            <div class="column is-5">
+                <div id="error-datos-{#ID_RED_SOCIAL#}" class="error"></div>
+            </div>
+        </div>
+    </div>
+</form>

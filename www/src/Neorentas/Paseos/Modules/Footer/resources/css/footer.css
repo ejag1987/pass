@@ -1,0 +1,65 @@
+footer {
+    padding: 4rem 10%;
+}
+footer strong {
+    font-family: "QuicksandBold", "Arial", sans-serif;
+    color: #ffffff;
+}
+
+footer .title {
+    display: inline-block;
+}
+
+footer .subtitle {
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+footer div,
+footer a {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.logo-padre {
+    border-left: 2px solid #ffffff;
+    padding: 0 3.5rem;
+}
+.logo-padre img {
+    width: 65%;
+    max-width: 186px;
+}
+
+footer .icono {
+    /*float: left;*/
+    width: 41px;
+    margin-right: 20px;
+}
+
+footer .icono {
+    align-items: flex-start;
+
+}
+
+.icono img {
+    max-width: 41px;
+    width: 41px !important;
+}
+
+.columna-centrada {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10%;
+    }
+
+    footer .columna-centrada {
+        justify-content: left;
+    }
+}
+

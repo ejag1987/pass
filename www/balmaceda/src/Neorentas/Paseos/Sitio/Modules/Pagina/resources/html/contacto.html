@@ -1,0 +1,52 @@
+
+<div class="columns contenido-pagina superior">
+    <div class="column is-6">
+        <form id="form-contacto">
+            <p class="control">
+                <input id="nombre" class="input box-border-info" type="text" placeholder="Nombre"
+                       data-validate="true" data-required="true" data-validation="text">
+            </p>
+            <p class="control">
+                <input id="mail" class="input box-border-info" type="email" placeholder="E-mail"
+                       data-validate="true" data-required="true" data-validation="mail">
+            </p>
+            <p class="control">
+                <textarea id="mensaje" class="textarea box-border-info" placeholder="Mensaje"
+                          data-validate="true" data-required="true" data-validation="text"></textarea>
+            </p>
+            <p class="control">
+                <button id="envio-contacto" type="button" class="button is-info full">ENVIAR</button>
+            </p>
+            <input type="hidden" id="token" value="{#TOKEN#}" data-validate="true" data-required="true" data-validation="text">
+            <div id="error-envio" class="control"> </div>
+        </form>
+    </div>
+    <div class="column is-1-desktop is-hidden-mobile"></div>
+    <div class="column is-5">
+        <div class="icono icono-top icono-principal {#CLASE_DIRECCION#}">
+            <div class="icono-servicio"><img src="{#BASE_URL#}resources/img/map_point_celeste.svg"></div>
+            <div class="">
+                <div><strong>Dirección</strong></div>
+                <div>{#DIRECCION#}</div>
+                <div>
+                    <a class="text-info" href="{#COMO_LLEGAR#}" target="_blank">
+                        Cómo llegar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="icono icono-top icono-principal {#CLASE_TELEFONO#}">
+            <div class="icono-servicio"><img src="{#BASE_URL#}resources/img/telefono_celeste.svg"></div>
+            <div class="">
+                <div><strong>Teléfono</strong></div>
+                <div class="text-dark"><a href="tel:{#TELEFONO_MARCA#}">{#TELEFONO#}</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contenido-ancho">
+    <div class="google-maps {#CLASE_MAPA#}">
+        {#GOOGLE_MAPS#}
+    </div>
+</div>
+

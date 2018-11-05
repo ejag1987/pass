@@ -1,0 +1,163 @@
+<section class="section box box-border-info">
+    <h1 class="title is-4">Información comercial</h1>
+
+    <div  class="columns">
+        <div class="column is-6">
+            <div class="form-group">
+                <label class="label">Fondo de la página</label>
+                <div id="bloque-fondos" class="bloque-subir">
+                    {#HTML_FONDO#}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="editor">Logo</label>
+                <div id="bloque-logo" class="bloque-subir">
+                    {#HTML_IMAGEN#}
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-6">
+            <form id="contenido-texto" class="">
+                <div class="form-group">
+                    <label class="label">Título normal</label>
+                    <p class="control">
+                        <input id="titulo1" class="input" type="text" placeholder="Título normal" value="{#TITULO1#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Título en negritas</label>
+                    <p class="control">
+                        <input id="titulo2" class="input" type="text" placeholder="Título en negritas" value="{#TITULO2#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="editor">Texto</label>
+                    <p class="control">
+                        <textarea id="editor" class="editor" name="editor"
+                                  data-validate="true" data-validation="text">{#TEXTO#}</textarea>
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Superficie del terreno (m2)</label>
+                    <p class="control">
+                        <input id="terreno" class="input" type="text" placeholder="Superficie del terreno"
+                               value="{#TERRENO#}" data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Superficie construida (m2)</label>
+                    <p class="control">
+                        <input id="contruida" class="input" type="text" placeholder="Superficie construida"
+                               value="{#CONTRUIDA#}" data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Superficie arrendable (m2)</label>
+                    <p class="control">
+                        <input id="arrendable" class="input" type="text" placeholder="Superficie arrendable"
+                               value="{#ARRENDABLE#}" data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Estacionamientos</label>
+                    <p class="control">
+                        <input id="estacionemiento" class="input" type="text" placeholder="Estacionamientos"
+                               value="{#ESTACIONAMIENTO#}" data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Fecha de apertura</label>
+                    <p class="control">
+                        <input id="fecha_apertura" class="input" type="text" placeholder="Fecha de apertura"
+                               value="{#FECHA_APERTURA#}" data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Horario de tiendas</label>
+                    <p class="control">
+                        <input id="horario-tiendas" class="input" type="text" placeholder="Horario de tiendas"
+                               value="{#HORARIO_TIENDAS#}" data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group alto-boton">
+                    <button type="button" id="guardar-info" class="button is-primary pull-left">GUARDAR</button>
+                    <div id="error-acerca" class="error pull-left"></div>
+                </div>
+            </form>
+
+            <input type="hidden" id="id-pagina" value="{#ID_PAGINA#}">
+            <input type="hidden" id="id-sitio" value="{#ID_SITIO#}">
+        </div>
+    </div>
+</section>
+
+<section class="section box box-border-info">
+    <h1 class="title is-4">Imágenes</h1>
+
+    <form id="pie-imagen">
+        <div class="columns">
+            <div class="column is-6">
+                <div class="form-group">
+                    <label class="label">Imagen 1</label>
+                    <div id="bloque-render1" class="bloque-subir">
+                        {#HTML_RENDER_1#}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Pie de imagen 1</label>
+                    <p class="control">
+                        <input id="pie-foto1" class="input" type="text" placeholder="Pie de imagen"
+                               value="{#PIE_FOTO1#}" data-validate="true" data-validation="text">
+                    </p>
+                </div>
+            </div>
+            <div class="column is-6">
+                <div class="form-group">
+                    <label class="label">Imagen 2</label>
+                    <div id="bloque-render2" class="bloque-subir">
+                        {#HTML_RENDER_2#}
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Pie de imagen 2</label>
+                        <p class="control">
+                            <input id="pie-foto2" class="input" type="text" placeholder="Pie de imagen"
+                                   value="{#PIE_FOTO2#}" data-validate="true" data-validation="text">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="form-group alto-boton">
+                <button type="button" id="guardar-render" class="button is-primary pull-left">GUARDAR</button>
+                <div id="error-render" class="error pull-left"></div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<section class="section box box-border-info">
+    <h1 class="title is-4">Servicios</h1>
+    <div class="columns is-multiline servicios">
+        {#SERVICIOS#}
+    </div>
+    <div class="form-group alto-boton">
+        <button type="button" id="guardar-servicio" class="button is-primary pull-left">GUARDAR</button>
+        <div id="error-servicio" class="error pull-left"></div>
+    </div>
+</section>

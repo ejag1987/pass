@@ -1,0 +1,42 @@
+{
+  "name": "neorentas/paseos",
+  "license": "",
+  "type": "project",
+    "description": "Sistema de sitios de neorentas.",
+    "keywords": [],
+    "homepage": "http://www.paseos.cl",
+    "authors": [
+        {
+            "name": "Álvaro Somoza",
+            "email": "asomoza@extend.cl",
+            "homepage": "http://www.extend.cl"
+        }, {
+            "name": "Francisca Nuñez",
+            "email": "fnunez@extend.cl",
+            "homepage": "http://www.extend.cl"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "vendor-dir": "./vendor"
+    },
+    "require": {
+        "php": ">=5.5",
+        "dompdf/dompdf": "0.8.*",
+        "zcode/lighting" : "dev-master",
+        "phpmailer/phpmailer": "~5.2",
+        "meyfa/php-svg" : "0.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "Neorentas\\Paseos\\": "src/Neorentas/Paseos",
+          "Neorentas\\Paseos\\Sitio\\": "balmaceda/src/Neorentas/Paseos/Sitio"
+        }
+    },
+    "repositories" : [
+        {
+            "type" : "vcs",
+            "url" : "git@gitlab.zcode.cl:zcode/lighting.git"
+        }
+    ]
+}

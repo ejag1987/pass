@@ -1,0 +1,97 @@
+<div class=" box box-border-info">
+    <div class="delete cerrar-usuario"></div>
+    <h1 class="title is-5">{#ACCION#}</h1>
+
+
+    <form id="form-usuario">
+        <div class="form-group columns">
+            <label for="nombre" class="label column is-3">Nombre</label>
+            <p class="control column is-7">
+                <input id="nombre" class="input" type="text" placeholder="Nombre" value="{#NOMBRE#}"
+                       data-required="true" data-validate="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group columns">
+            <label for="apellido" class="label column is-3">Apellido</label>
+            <p class="control column is-7">
+                <input id="apellido" class="input" type="text" placeholder="Apellido" value="{#APELLIDO#}"
+                       data-required="true" data-validate="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group columns">
+            <label for="rut" class="label column is-3">RUT</label>
+            <p class="control column is-7">
+                <input id="rut" class="input" type="text" placeholder="RUT" value="{#RUT#}"
+                       data-validate="true" data-validation="rut">
+            </p>
+        </div>
+
+        <div class="form-group columns">
+            <label for="mail" class="label column is-3">E-mail</label>
+            <p class="control column is-7">
+                <input id="mail" class="input" type="text" placeholder="E-mail" value="{#MAIL#}"
+                       data-required="true" data-validate="true" data-validation="mail">
+            </p>
+        </div>
+
+        <div class="form-group columns contrasena">
+            <label for="contrasena" class="label column is-3">Contraseña</label>
+
+            <p class="control pass column is-7">
+                <input id="contrasena" class="input" type="password" placeholder="Contraseña"
+                       data-validate="true" data-validation="text">
+            </p>
+            <!--<div id="pswd_info">
+                <h4>La contraseña debe cumplir los siguientes requisitos:</h4>
+                <ul>
+                    <li id="letter" class="invalid">Por lo menos <strong>una letra</strong></li>
+                    <li id="capital" class="invalid">Por lo menos <strong>una letra mayúscula</strong></li>
+                    <li id="special" class="invalid">Tener al menos <strong>un caracter especial</strong></li>
+                    <li id="number" class="invalid">Por lo menos <strong>un número</strong></li>
+                    <li id="length" class="invalid">Tener al menos <strong>8 caracteres</strong></li>
+
+                </ul>
+            </div>-->
+        </div>
+
+        <div class="form-group columns">
+            <label for="telefono" class="label column is-3">Teléfono</label>
+            <p class="control column is-7">
+                <input id="telefono" class="input" type="text" placeholder="Teléfono" value="{#TELEFONO#}"
+                       data-validate="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group columns">
+            <label for="perfil" class="label column is-3">Perfil</label>
+            <p class="control column is-7">
+                <select id="perfil" class="select2" data-placeholder="Seleccione perfil"
+                        data-required="true" data-validate="true" data-validation="text" >
+                    <option></option>
+                    {#PERFIL#}
+                </select>
+            </p>
+        </div>
+
+        <div class="texto-informacion">
+            <div>{#REGISTRO#}</div>
+        </div>
+        <div class="texto-informacion columns">
+            <div class="column is-9 {#CLASE_VERIFICADO#}">{#VERIFICACION#}</div>
+            <div class="column is-3 botones-verificacion">
+                <button type="button" id="verificar" class="button is-success {#CLASE_BOTON_VERIFICACION#}" data-id="{#ID_USUARIO#}">Verificar usuario</button>
+            </div>
+
+        </div>
+
+        <input type="hidden" id="id-usuario" value="{#ID_USUARIO#}">
+
+        <div class="form-group">
+            <button type="button" id="guardar" class="button is-primary guardar-nuevo">Guardar</button>
+            <button type="button" id="eliminar" class="button is-danger guardar-nuevo borrar" data-id="{#ID_USUARIO#}">Eliminar</button>
+            <div id="error-agregar" class="error"></div>
+        </div>
+    </form>
+</div>

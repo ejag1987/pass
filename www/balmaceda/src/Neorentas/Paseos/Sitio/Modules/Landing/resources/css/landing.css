@@ -1,0 +1,116 @@
+.section-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/** GENERAL **/
+.header-landing {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 8.0vh;
+    overflow: hidden;
+}
+.header-landing img {
+    width: 100%;
+}
+
+.footer-landing {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 10.91vh;
+    overflow: hidden;
+}
+.footer-landing img {
+    width: 100%;
+}
+
+/***************/
+/** CONTENIDO **/
+/***************/
+.content-landing {
+    width: 100%;
+    top: 8vh;
+    bottom: 10.91vh;
+    position: absolute;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.content-contador {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo-paseo {
+    width: 20%;
+}
+
+.texto {
+    margin-top: 5vh;
+    font-size: 11vh;
+    font-weight: bold;
+    font-family: "QuicksandBold",Arial,Helvetica,sans-serif;
+}
+
+/************/
+/** MARCAS **/
+/************/
+#carousel-marcas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.marcas .owl-theme .owl-nav [class*="owl-"] {
+    background: transparent;
+}
+
+#marcas {
+    width: 85%;
+    margin: -1px auto 0;
+    padding: 20px 0;
+}
+
+#marcas.owl-carousel .owl-nav .owl-prev {
+    left:-6%;
+}
+#marcas.owl-carousel .owl-nav .owl-next {
+    right:-6%;
+}
+
+#marcas .owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+#marcas.owl-theme .owl-nav [class*="owl-"] {
+    background: transparent;
+    width: 11vh;
+    top: 5px;
+}
+#marcas.owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+.marca {
+    display: inline-block;
+    position: absolute;
+    top: 8vw;
+    right: 17vw;
+    width: 14vw;
+    max-width: 180px;
+}
+.marca img {
+    width: 100%;
+}
+

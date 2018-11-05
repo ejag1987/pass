@@ -1,0 +1,49 @@
+<section class="section box box-border-info">
+    <h1 class="title is-4">Página eventos anteriores</h1>
+    <div class="columns">
+        <div class="column is-6">
+            <label class="label">Fondo de la página</label>
+            <div id="bloque-subir-fondo" class="bloque-subir">
+                {#HTML_FONDO#}
+            </div>
+        </div>
+
+        <form id="pagina" class="column is-6">
+            <div class="form-group">
+                <label class="label">Título normal</label>
+                <p class="control">
+                    <input id="titulo1" class="input" type="text" placeholder="Título normal" value="{#TITULO1#}"
+                           data-validate="true" data-validation="text">
+                </p>
+            </div>
+            <div class="form-group">
+                <label class="label">Título en negritas</label>
+                <p class="control">
+                    <input id="titulo2" class="input" type="text" placeholder="Título en negritas" value="{#TITULO2#}"
+                           data-validate="true" data-validation="text">
+                </p>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="guardar-datos" class="button is-primary">GUARDAR</button>
+                <div id="error-datos" class="error"></div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="section boton-galeria">
+    <a href="{#BASE_URL#}galeria/{#ID_SITIO#}/nuevo" class="button is-primary" >
+        <i class="fa fa-picture-o"></i>&nbsp;&nbsp; Agregar nueva galería
+    </a>
+</section>
+
+<section class="section box box-border-info">
+    <h1 class="title is-4">Eventos anteriores</h1>
+    <div id="bloque-galerias" class="bloque-galerias columns">
+        {#GALERIAS#}
+    </div>
+</section>
+
+<input type="hidden" id="id-sitio" value="{#ID_SITIO#}">
+<input type="hidden" id="id-pagina" value="{#ID_PAGINA#}">

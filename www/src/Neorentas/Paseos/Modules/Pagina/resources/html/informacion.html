@@ -1,0 +1,68 @@
+<div class="columns contenido-pagina superior">
+    <div id="menu-lateral" class="column is-one-quarter-desktop is-hidden-touch">
+        <ul>
+            {#MENU_PASEOS#}
+        </ul>
+    </div>
+    <div class="column is-three-quarters-touch">
+        <div id="">
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <a href="#" target="_blank">
+                        <img src="{#LOGO#}" alt="{#NOMBRE#}">
+                    </a>
+                </div>
+                <div class="boton-mapa column is-three-quarters">
+                    {#BOTON#}
+                </div>
+            </div>
+            <div class="informacion">
+                <p>{#INFORMACION#}</p>
+            </div>
+            <div class="columns  borde-bottom-info">
+                <div class="column is-half info">
+                    <div class="icono icono-principal">
+                        <div class="icono-servicio"><img src="{#BASE_URL#}resources/img/map_point_celeste.svg"></div>
+                        <div class="">{#DIRECCION#}</div>
+                    </div>
+                    <div class="icono icono-principal">
+                        <div class="icono-servicio"><img src="{#BASE_URL#}resources/img/superficie.svg"></div>
+                        <div class="">
+                            {#TERRENO#}
+                            {#CONTRUIDA#}
+                            {#ARRENDABLE#}
+                        </div>
+                    </div>
+                    <div class="icono icono-principal">
+                        <div class="icono-servicio"><img src="{#BASE_URL#}resources/img/estacionamiento.svg"></div>
+                        <div class="">{#ESTACIONAMIENTO#} estacionamientos</div>
+                    </div>
+
+                    <div class="fecha-apertura">{#FECHA_APERTURA#}</div>
+
+                    <div class="link-paseo text-info">
+                        <a class="" href="{#LINK#}" target="_blank">{#URL#}</a>
+                    </div>
+                    <div class="link-paseo text-info">
+                        <a class="" href="mailto:{#CORREO#}">{#CORREO#}</a>
+                    </div>
+                </div>
+                <div class="column is-half info">
+                    <div class="google-maps-info">{#GOOGLE_MAPS#}</div>
+                </div>
+            </div>
+
+
+            <div class="info {#CLASE_SERVICIOS#}">
+                <h3 class="titulo-seccion is-3">Otros Servicios</h3>
+                {#SERVICIOS#}
+            </div>
+
+            <div class="imagenes-render">
+                {#IMAGENES#}
+            </div>
+
+            <div class="info-referencial">* información referencial</div>
+        </div>
+    </div>
+</div>

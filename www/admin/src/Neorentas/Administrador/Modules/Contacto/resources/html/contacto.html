@@ -1,0 +1,78 @@
+<section class="section box box-border-info">
+    <h1 class="title is-4">Datos de contacto</h1>
+    <div class="columns">
+        <div class="column is-6">
+            <label class="label">Fondo de la página</label>
+            <div id="bloque-fondo" class="bloque-subir">
+                {#HTML_FONDO#}
+            </div>
+        </div>
+
+        <input type="hidden" id="id-pagina" value="{#ID_PAGINA#}">
+
+        <div class="column is-6">
+            <form id="datos-sitio" >
+                <div class="form-group">
+                    <label class="label">Título normal</label>
+                    <p class="control">
+                        <input id="titulo1" class="input" type="text" placeholder="Título normal" value="{#TITULO1#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label class="label">Título en negritas</label>
+                    <p class="control">
+                        <input id="titulo2" class="input" type="text" placeholder="Título en negritas" value="{#TITULO2#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Dirección</label>
+                    <p class="control">
+                        <input id="direccion" class="input" type="text" placeholder="Dirección" value="{#DIRECCION#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Correo</label>
+                    <p class="control">
+                        <input id="correo" class="input" type="text" placeholder="Correo" value="{#CORREO#}"
+                               data-validate="true" data-required="true" data-validation="mail">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Teléfono</label>
+                    <p class="control">
+                        <input id="telefono" class="input" type="tel" placeholder="Teléfono" value="{#TELEFONO#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Google Maps</label>
+                    <p class="control">
+                        <textarea class="textarea" id="google-maps" data-validate="true" data-validation="text" title="">{#GOOGLE_MAPS#}</textarea>
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Cómo llegar</label>
+                    <p class="control">
+                        <input id="como-llegar" class="input" type="text" placeholder="Cómo llegar" value="{#COMO_LLEGAR#}"
+                               data-validate="true" data-validation="text">
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" id="guardar-datos" class="button is-primary">GUARDAR</button>
+                    <div id="error-datos" class="error"></div>
+                </div>
+
+                <input type="hidden" id="id-sitio" value="{#ID_SITIO#}">
+            </form>
+        </div>
+    </div>
+</section>

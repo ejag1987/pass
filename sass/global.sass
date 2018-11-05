@@ -1,0 +1,82 @@
+@import "utilities/functions"
+@import "utilities/variables"
+@import "utilities/mixins"
+@import "utilities/controls"
+
+@import "base/generic"
+@import "base/minireset"
+@import "base/helpers"
+
+@import "components/menu"
+@import "components/nav"
+
+@import "elements/form"
+@import "elements/button"
+@import "elements/image"
+@import "elements/progress"
+@import "elements/title"
+@import "elements/tooltip"
+
+@import "grid/columns"
+
+.section-content
+  padding: 2.5rem
+// Colors
+@each $name, $pair in $colors
+  $color: nth($pair, 1)
+  $color-invert: nth($pair, 2)
+  .bg-#{$name}
+    background-color: #{$color}
+    color: #{$color-invert}
+
+  .bg-#{$name} .menu-label
+    border-bottom: 1px solid #{$color-invert}
+  .bg-#{$name} .menu-label, .bg-#{$name} a
+    color: #{$color-invert}
+
+  .box-border-#{$name}
+    border: 1px solid #{$color}
+    padding: $padding-large
+
+.has-error
+  color: $danger !important
+  & label
+    color: $danger !important
+  & input
+    border-color: $danger !important
+  & .select2-selection
+    border-color: $danger !important
+
+#paginador.next
+  text-align: center
+  margin-top: 45px
+  margin-bottom: 45px
+
+  & .paginador
+    border: 1px solid $primary
+    padding: $padding-boton
+    display: inline
+    cursor: pointer
+
+.box
+  box-shadow: 0 4px 7px rgba(8, 8, 8, 0.1)
+  padding: $padding-large
+
+.delete
+  +delete
+
+.not-active
+  pointer-events: none
+  cursor: default
+
+.alto-boton
+  height: 35px
+  margin-top: 1rem
+
+main > .content.columns
+  min-height: 95%
+  position: absolute
+  width: 100%
+
+aside
+  padding-left: 1.25rem !important

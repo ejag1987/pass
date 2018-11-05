@@ -1,0 +1,58 @@
+<div class="galeria box box-border-info">
+    <form id="galeria-{#ID_GALERIA#}" class="form-galeria">
+        <h1 class="title is-4">Galería</h1>
+        <div class="form-group">
+            <label class="label">Título</label>
+            <p class="control">
+                <input id="titulo" class="input" type="text" placeholder="Título" value="{#TITULO#}"
+                       data-validate="true" data-required="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Descripción</label>
+            <p class="control">
+                <textarea id="descripcion" class="textarea" placeholder="Descripción"
+                          data-validate="true" data-validation="text">{#DESCRIPCION#}</textarea>
+            </p>
+        </div>
+
+        <div class="form-group columns">
+            <div class="column is-1">
+                <button id="guardar-galeria" type="button" class="button is-primary guardar-galeria" data-id="{#ID_GALERIA#}">GUARDAR</button>
+            </div>
+            <div class="column is-1">
+                <button id="borrar-galeria" type="button" class="button is-danger borrar-galeria" data-id="{#ID_GALERIA#}">ELIMINAR</button>
+            </div>
+            <div class="column is-10">
+                <div id="error-datos-{#ID_GALERIA#}" class="error"></div>
+            </div>
+        </div>
+
+        <input id="id-galeria" type="hidden" value="{#ID_GALERIA#}">
+        <input id="id-sitio" type="hidden" value="{#ID_SITIO#}">
+    </form>
+</div>
+
+<div class="galeria-items box box-border-info">
+    <h1 class="title is-4">Imagenes</h1>
+
+    <div id="bloque-subir-foto" class="bloque-subir">
+        <div id="drag-and-drop-zone-{#ID_GALERIA#}" data-id="{#ID_GALERIA#}" data-imagen="{#IMAGEN#}" class="uploader">
+            <div>Arrastra y suelte los archivos aquí</div>
+            <div class="or">-- o --</div>
+
+            <div class="browser">
+                <label>
+                    <span>Haga clic para agregar archivos</span>
+                    <input id="fileupload-{#IMAGEN#}-{#ID_GALERIA#}" type="file" name="files-{#IMAGEN#}-{#ID_GALERIA#}" title='Subir imagen'>
+                </label>
+            </div>
+        </div>
+        <div id="subir"></div>
+    </div>
+
+    <div id="bloque-items" class="columns">
+        {#IMAGENES#}
+    </div>
+</div>

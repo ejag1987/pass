@@ -1,0 +1,25 @@
+<section class="section boton-usuario">
+    <button id="nuevo-usuario" type="button" class="button is-primary">
+        <i class="fa fa-user-plus"></i>&nbsp;&nbsp; Agregar nuevo usuario
+    </button>
+</section>
+
+<section class="section">
+    <div class="listado box box-border-info ">
+        <h1 class="title is-4">Usuarios</h1>
+        <div id="listado-usuarios" class="listado-usuarios">
+            <div class="columns item-usuario">
+                <div class="column is-1 centrado">UID</div>
+                <div class="column is-2 centrado">
+                    Verificado
+                </div>
+                <div class="column is-5">Nombre</div>
+                <div class="column is-2">Perfil</div>
+                <div class="column is-2"></div>
+            </div>
+
+            {#USUARIOS#}
+        </div>
+    </div>
+    <div id="bloque-usuario" class="edicion"></div>
+</section>

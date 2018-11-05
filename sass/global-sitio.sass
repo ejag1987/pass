@@ -1,0 +1,112 @@
+// Typography
+$family-sans-serif: "QuicksandRegular", "Arial", sans-serif !default
+$family-primary: $family-sans-serif !default
+$family-bold: "QuicksandBold", "Arial", sans-serif !default
+$family-light: "QuicksandLight", "Arial", sans-serif !default
+
+$padding-menu: 0.5rem 3.75rem
+$radius: 0
+$size-normal: 1.2rem
+
+@import "utilities/functions"
+@import "utilities/variables"
+@import "utilities/mixins"
+@import "utilities/controls"
+
+@include font-face("FontAwesome", '../fonts/fontawesome-webfont')
+@include font-face("QuicksandBold", '../fonts/QuicksandBold')
+@include font-face("QuicksandRegular", '../fonts/QuicksandRegular')
+@include font-face("QuicksandLight", '../fonts/QuicksandLight')
+
+@import "base/generic"
+@import "base/minireset"
+@import "base/helpers"
+
+@import "components/menu"
+@import "components/nav"
+@import "components/navbar"
+@import "elements/form"
+@import "elements/button"
+@import "elements/content"
+
+@import "grid/columns"
+
+@import "elements/title"
+
+// Colors
+@each $name, $pair in $colors
+  $color: nth($pair, 1)
+  $color-invert: nth($pair, 2)
+  .bg-#{$name}
+    background-color: #{$color}
+    color: #{$color-invert}
+  .bg-#{$name}-alpha
+    background-color: colorAlpha($color, .4)
+    color: #{$color-invert}
+
+  .bg-#{$name}
+    background-color: #{$color}
+    color: #{$color-invert}
+
+  .bg-#{$name} .menu-label
+    border-bottom: 1px solid #{$color-invert}
+  .bg-#{$name} .menu-label, .bg-#{$name} a
+    color: #{$color-invert}
+
+  li.text-#{$name}
+    color: #{$color}
+  li.text-#{$name} a
+    color: #{$color}
+  li.text-#{$name} a:hover
+    color: $grey-dark
+  li.text-#{$name} a.is-active
+    color: $grey-dark
+
+  .box-border-#{$name}
+    border: 1px solid #{$color}
+
+  .borde-bottom-#{$name}
+    border-bottom: 2px solid #{$color}
+    padding-bottom: 2rem
+
+.title
+  font-family: $family-bold
+
+.subtitle
+  font-family: $family-light
+
+.nav a
+  font-family: $family-bold
+
+.navbar-item
+  font-family: $family-bold
+  font-size: 1rem
+
+::-webkit-input-placeholder
+  text-align: center
+  color: $grey-dark
+
+::-moz-placeholder
+  text-align: center
+  color: $grey-dark
+
+.not-active
+  pointer-events: none
+  touch-action: none
+  cursor: default
+
+.caja-contenido
+  padding: 0 10%
+
+
+.navbar-burger:hover
+  background-color: transparent
+.navbar-burger:focus
+  outline: none
+.navbar-burger:hover span
+  background-color: #ffffff
+
+.navbar-burger.is-active span
+  background-color: #fff
+
+

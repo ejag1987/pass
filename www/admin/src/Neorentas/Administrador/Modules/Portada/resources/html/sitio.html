@@ -1,0 +1,27 @@
+<form id="caluga-{#ID_CALUGA#}" class="column is-3">
+    <div class="box slide">
+        <div id="bloque-subir-caluga-{#ID_CALUGA#}" class="bloque-subir" data-bloque="caluga">
+            {#HTML_ACCION_ICONO#}
+        </div>
+
+        <div class="form-group">
+            <label class="label">Link</label>
+            <p class="control">
+                <input id="link-{#ID_CALUGA#}" class="input" type="text" placeholder="Link" value="{#LINK#}"
+                       data-validate="true" data-validation="text">
+            </p>
+        </div>
+
+        <div class="form-group columns botones-slide" data-bloque="caluga">
+            <div class="column is-4">
+                <button type="button" class="button is-primary guardar" data-id="{#ID_CALUGA#}">GUARDAR</button>
+            </div>
+            <div class="column is-4">
+                <button type="button" class="button is-danger borrar" data-id="{#ID_CALUGA#}">ELIMINAR</button>
+            </div>
+            <div class="column is-5">
+                <div id="error-caluga-{#ID_CALUGA#}" class="error"></div>
+            </div>
+        </div>
+    </div>
+</form>

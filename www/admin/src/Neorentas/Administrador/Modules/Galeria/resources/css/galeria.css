@@ -1,0 +1,72 @@
+.boton-galeria {
+    margin: 0.75rem 0;
+}
+
+.section.box .title {
+    border-bottom: 1px solid rgb(0, 133, 200);
+    padding-bottom: 10px;
+}
+
+.promocion {
+    background: #fff;
+}
+
+.bloque-galerias {
+    flex-wrap: wrap;
+}
+
+.form-group.columns {
+    margin-top: 0.75rem;
+}
+
+.form-group.columns .error {
+    margin-left: 0;
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
+
+.error {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.uploader div.browser label {
+    padding: 0.5rem 1rem;
+}
+.uploader {
+    font-size: 1rem;
+    padding: 30px 20px;
+}
+
+.imagen {
+    text-align: center;
+}
+.imagen img {
+    background: #7a7a7a;
+}
+
+.form-galeria {
+    background: #ffffff;
+}
+
+.galeria {
+    position: relative;
+    background: #ffffff;
+}
+
+.botones-edicion {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+}
+.botones-edicion > div {
+    display: inline-block;
+    margin: 0 0.3rem;
+    cursor: pointer;
+}
+
+.galeria-items {
+    margin-top: 2rem;
+}

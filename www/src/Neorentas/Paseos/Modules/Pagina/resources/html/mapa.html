@@ -1,0 +1,35 @@
+<div class="columns contenido-pagina superior">
+    <div id="menu-lateral" class="column is-one-quarter-desktop is-hidden-touch">
+        <ul>
+            {#MENU_PASEOS#}
+        </ul>
+    </div>
+    <div class="column is-three-quarters-desktop">
+        <div id="">
+            <div class="columns botones-mapa">
+                <div class="column is-three-quarters text-right botones-niveles">
+                    {#MENU_PLANOS#}
+                </div>
+                <div class="boton-mapa column is-one-quarter">
+                    <a class="button is-info is-outlined" href="{#BASE_URL#}pagina/{#ALIAS#}">
+                        DESCRIPCIÓN
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div id="mapa" style=""></div>
+                <div id="indice"></div>
+                <div class="clear: both;"></div>
+            </div>
+
+            <div id="referencia-plano" class="referencia">
+                <div class="pie"></div>
+                <div class="fecha"></div>
+            </div>
+        </div>
+        <div class="info-referencial">* información referencial</div>
+    </div>
+</div>
+
+<input type="hidden" id="id-plano-defecto" value="{#ID_PLANO_DEFECTO#}">

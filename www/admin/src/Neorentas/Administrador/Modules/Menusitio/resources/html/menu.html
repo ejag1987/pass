@@ -1,0 +1,65 @@
+<section class="section box box-border-info">
+    <h1 class="title is-4">Menú</h1>
+
+    <input type="hidden" id="id-sitio" value="{#ID_SITIO#}">
+
+    <div class="columns">
+        <div class="column is-4">
+            <div class="box box-border-light">
+                <h1 class="title is-5">Agregar menú</h1>
+
+                <form id="form-agregar-menu">
+                    <div class="form-group">
+                        <label for="nombre" class="label">Nombre</label>
+                        <p class="control">
+                            <input id="nombre" class="input" type="text" placeholder="Nombre" value=""
+                                   data-required="true" data-validate="true" data-validation="text">
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pagina-nueva" class="label">Página</label>
+                        <p class="control">
+                           <select id="pagina-nueva" class="select2" data-validate="true" data-validation="text">
+                               <option></option>
+                               {#PAGINAS#}
+                           </select>
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="link-nueva" class="label">Link externo</label>
+                        <p class="control">
+                            <input id="link-nueva" class="input" type="text" placeholder="Link" value=""
+                                   data-validate="true" data-validation="url">
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" id="agregar-menu" class="button is-primary guardar-nuevo">Agregar menu</button>
+                        <div id="error-agregar" class="error"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="column is-8">
+            <div class="form-group alto-boton">
+                <button type="button" class="button is-primary guardar-orden">GUARDAR ORDEN</button>
+                <div class="error-orden"></div>
+            </div>
+
+
+            <div class="bloque-menu">
+                <ol id="bloque-menu" class="sortable orden-menu">
+                    {#MENU#}
+                </ol>
+            </div>
+
+            <div class="form-group alto-boton">
+                <button type="button" class="button is-primary guardar-orden">GUARDAR ORDEN</button>
+                <div class="error-orden"></div>
+            </div>
+        </div>
+    </div>
+</section>

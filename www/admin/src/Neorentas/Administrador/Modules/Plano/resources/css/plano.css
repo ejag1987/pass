@@ -1,0 +1,64 @@
+.local {
+    margin-bottom: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-local {
+    background-color: rgb(0, 177, 235);
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+    font-size: 130%;
+}
+.abrir-descripcion {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.descripcion {
+    padding: 0.5rem 1.5rem;
+}
+
+.puntos {
+    border-bottom: 1px solid rgb(0, 177, 235);
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.puntos > * {
+    display: inline-block;
+}
+
+.detalle-puntos {
+    margin-bottom: 1rem;
+}
+
+.abrir-puntos {
+    cursor: pointer;
+    float: right;
+}
+.subrayado {
+    border-bottom: 1px solid rgb(0, 177, 235);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 20px;
+}
+
+.reservado {
+    display: inline-block;
+    font-size: smaller;
+    margin-right: 15px;
+}
+
+.reservado span {
+    margin-right: 15px;
+}
+
+.label-danger {
+    background-color: rgb(228, 5, 30);
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}

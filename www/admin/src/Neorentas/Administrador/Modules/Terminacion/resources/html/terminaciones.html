@@ -1,0 +1,18 @@
+<section class="section box box-border-info">
+    <h1 class="title is-4">Terminaciones</h1>
+
+    <form id="form-terminaciones">
+        {#TERMINACIONES#}
+
+        <div class="form-group column is-1 is-offset-11 has-text-right">
+            <i id="nueva-terminacion" class="fa fa-plus-circle fa-3x  fa-align-right text-success" aria-hidden="true"></i>
+        </div>
+
+        <div class="form-group alto-boton">
+            <button type="button" id="guardar-info" class="button is-primary pull-left">GUARDAR</button>
+            <div id="error" class="error pull-left"></div>
+        </div>
+
+        <input type="hidden" id="id-sitio" value="{#ID_SITIO#}">
+    </form>
+</section>
